@@ -11,7 +11,7 @@ const UiKit = {
     },
     Footer() {
         return <h3>A Footer.</h3>;
-    },
+    }
 };
 
 render(

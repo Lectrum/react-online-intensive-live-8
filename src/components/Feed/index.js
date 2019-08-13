@@ -2,21 +2,17 @@
 import React, { Component } from 'react';
 
 // Components
-import Composer from '../Composer';
-import Post from '../Post';
-import StatusBar from '../StatusBar';
+import * as Components from '../';
 
 // Instruments
 import Styles from './styles.module.css';
 
-export default class Feed extends Component {
-    render() {
-        return (
-            <section className = { Styles.feed }>
-                <StatusBar />
-                <Composer />
-                <Post />
-            </section>
-        );
-    }
-}
+export const Feed = () => {
+    return (
+        <section className = { Styles.feed }>
+            <Components.StatusBar />
+            <Components.Composer />
+            <Components.Post />
+        </section>
+    );
+};

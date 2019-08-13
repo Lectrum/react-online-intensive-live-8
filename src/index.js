@@ -6,11 +6,11 @@ import ReactDOM from 'react-dom';
 import './theme/init.css';
 
 // App
-// import App from './containers/App';
-//
-// ReactDOM.render(
-//     <App />,
-//     document.getElementById('root'),
-// );
+import { App } from './containers/App';
 
-import './examples';
+ReactDOM.render(
+    <App />,
+    document.getElementById('root'),
+);
+
+// import './examples';
