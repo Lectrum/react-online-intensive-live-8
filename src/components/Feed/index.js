@@ -7,14 +7,12 @@ import * as Components from '../';
 // Instruments
 import Styles from './styles.module.css';
 
-export class Feed extends Component {
-    render() {
-        return (
-            <section className={ Styles.feed }>
-                <Components.StatusBar/>
-                <Components.Composer/>
-                <Components.Post/>
-            </section>
-        );
-    }
-}
+export const Feed = () => {
+    return (
+        <section className={ Styles.feed }>
+            <Components.StatusBar/>
+            <Components.Composer/>
+            <Components.Post/>
+        </section>
+    );
+};

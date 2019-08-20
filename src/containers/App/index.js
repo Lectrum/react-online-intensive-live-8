@@ -2,8 +2,10 @@
 import React, { Component } from 'react';
 
 // Components
-import { Feed } from '../../components/Feed';
-import { Provider } from '../../components/HOC/withProfile';
+import {
+    Feed,
+    Provider
+} from '../../components';
 
 // Instruments
 import avatar from "../../theme/assets/lisa.png";

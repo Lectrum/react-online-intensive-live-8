@@ -9,7 +9,9 @@ class Child extends Component {
 }
 
 const Parent = () => {
-    return <Child message = 'Hello.' />;
+    const text = 'hello';
+
+    return <Child message = { text } />;
 };
 
 render(<Parent />, document.getElementById('root'));

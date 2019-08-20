@@ -1,27 +1,23 @@
 // Core
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 
 // Components
-import { Consumer } from '../../components/HOC/withProfile';
+import { Context } from '../../components';
 
 // Instruments
 import Styles from './styles.module.css';
 
-export class StatusBar extends Component {
-    render() {
-        return (
-            <Consumer>
-                {(context) => (
-                    <section className={Styles.statusBar}>
-                        <button>
-                            <img src={ context.avatar } />
-                            <span>{ context.currentUserFirstName }</span>
-                            &nbsp;
-                            <span>{ context.currentUserLastName }</span>
-                        </button>
-                    </section>
-                )}
-            </Consumer>
-        );
-    }
-}
+export const StatusBar = () => {
+    const context = useContext(Context);
+
+    return (
+        <section className={Styles.statusBar}>
+            <button>
+                <img src={ context.avatar } />
+                <span>{ context.currentUserFirstName }</span>
+                &nbsp;
+                <span>{ context.currentUserLastName }</span>
+            </button>
+        </section>
+    );
+};

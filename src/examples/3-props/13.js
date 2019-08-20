@@ -8,7 +8,7 @@ const Parent = (props) => {
     } = props;
 
     // props.test = 'error!';
-    // props.profile.firstName = 'no error :(';
+    props.profile.firstName = 'no error :(';
 
     console.log('props:', props);
 

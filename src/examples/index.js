@@ -2,4 +2,4 @@
 import './theme/init.css';
 
 // Examples
-import './2-jsx';
+import './5-context';

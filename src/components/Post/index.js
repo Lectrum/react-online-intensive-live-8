@@ -1,26 +1,22 @@
 // Core
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 import moment from 'moment';
 
 // Components
-import { Consumer } from '../../components/HOC/withProfile';
+import { Context } from '../../components';
 
 // Instruments
 import Styles from './styles.module.css';
 
-export class Post extends Component {
-    render() {
-        return (
-            <Consumer>
-                {(context) => (
-                    <section className={Styles.post}>
-                        <img src={ context.avatar }/>
-                        <a>{ context.currentUserFirstName } { context.currentUserLastName }</a>
-                        <time>{moment().format('MMMM D h:mm:ss a')}</time>
-                        <p>Howdy!</p>
-                    </section>
-                )}
-            </Consumer>
-        );
-    }
-}
+export const Post = () => {
+    const context = useContext(Context);
+
+    return (
+        <section className={Styles.post}>
+            <img src={ context.avatar }/>
+            <a>{ context.currentUserFirstName } { context.currentUserLastName }</a>
+            <time>{moment().format('MMMM D h:mm:ss a')}</time>
+            <p>Howdy!</p>
+        </section>
+    );
+};

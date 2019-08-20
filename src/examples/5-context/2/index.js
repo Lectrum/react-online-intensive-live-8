@@ -6,7 +6,7 @@ import { render } from 'react-dom';
 import { Library } from './Library';
 
 // Context
-import { Context } from './context';
+import { Provider } from './context';
 
 const libraryData = {
     title: 'Harry Potter',
@@ -14,8 +14,8 @@ const libraryData = {
 };
 
 render(
-    <Context.Provider value = { libraryData }>
+    <Provider value = { libraryData }>
         <Library />
-    </Context.Provider>,
+    </Provider>,
     document.getElementById('root'),
 );

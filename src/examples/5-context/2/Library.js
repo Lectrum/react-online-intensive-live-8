@@ -2,11 +2,11 @@
 import React from 'react';
 
 // Context
-import { Context } from './context';
+import { Consumer } from './context';
 
 const Page = () => {
     return (
-        <Context.Consumer>
+        <Consumer>
             {(contextData) => {
                 return (
                     <>
@@ -19,7 +19,7 @@ const Page = () => {
                     </>
                 );
             }}
-        </Context.Consumer>
+        </Consumer>
     );
 };
 
