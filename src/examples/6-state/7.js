@@ -9,13 +9,13 @@ class Wizard extends Component {
     };
 
     _grow = () => {
-        // setImmediate(() => {
-        this.setState((prevState) => ({ age: prevState.age + 1 }));
-        this.setState((prevState) => ({ age: prevState.age + 1 }));
-        this.setState((prevState) => ({ age: prevState.age + 1 }));
-        this.setState((prevState) => ({ age: prevState.age + 1 }));
-        this.setState((prevState) => ({ age: prevState.age + 1 }));
-        // });
+        setImmediate(() => {
+            this.setState((prevState) => ({ age: prevState.age + 1 }));
+            this.setState((prevState) => ({ age: prevState.age + 1 }));
+            this.setState((prevState) => ({ age: prevState.age + 1 }));
+            this.setState((prevState) => ({ age: prevState.age + 1 }));
+            this.setState((prevState) => ({ age: prevState.age + 1 }));
+        });
     };
 
     renders = 0;

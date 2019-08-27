@@ -8,7 +8,7 @@ class Wizard extends Component {
 
         this.state = {
             name: props.name,
-            age:  this.props.age,
+            age:  props.age,
         };
     }
 

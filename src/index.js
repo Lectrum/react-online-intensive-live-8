@@ -3,15 +3,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Theme
-import './theme/init.css';
+// import './theme/init.css';
 
 // App
-import { App } from './containers/App';
+// import { App } from './containers/App';
 
-ReactDOM.render(
-    <App />,
-    document.getElementById('root'),
-);
+// ReactDOM.render(
+//     <App />,
+//     document.getElementById('root'),
+// );
 
-// import './examples';
+import './examples';
 // import './hooks-demo'

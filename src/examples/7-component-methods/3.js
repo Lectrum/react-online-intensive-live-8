@@ -1,13 +1,13 @@
 class Human {
     constructor(name) {
         this.name = name;
-        // debugger;
+        debugger;
 
         this.sayName = this.sayName.bind(this);
     }
 
     sayName() {
-        // debugger;
+        debugger;
 
         console.log(this.name);
     }
@@ -15,6 +15,6 @@ class Human {
 
 const ron = new Human('Ron');
 
-ron.sayName();
-// setTimeout(ron.sayName, 1000);
+// ron.sayName();
+setTimeout(ron.sayName, 1000);
 // setImmediate(ron.sayName);

@@ -11,7 +11,7 @@ class Wizard extends Component {
     };
 
     _transform = () => {
-        this.setState([ 'potion of might', 'potion of invisibility' ]);
+        this.setState([ 'potion of might', 'potion of invisibility', 'test' ]);
     };
 
     render() {
