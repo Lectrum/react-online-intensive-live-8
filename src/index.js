@@ -13,5 +13,6 @@ import ReactDOM from 'react-dom';
 //     document.getElementById('root'),
 // );
 
-import './examples';
+// import './examples';
 // import './hooks-demo'
+import './demo';
