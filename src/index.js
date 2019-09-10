@@ -15,4 +15,5 @@ import ReactDOM from 'react-dom';
 
 // import './examples';
 // import './hooks-demo'
-import './demo';
+// import './demo';
+import './animation';
